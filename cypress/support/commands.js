@@ -27,6 +27,8 @@
 require("cypress-xpath")
 require('cypress-iframe')
 require('@4tw/cypress-drag-drop')
+import 'cypress-file-upload';
+require('cypress-downloadfile/lib/downloadFileCommand')
 Cypress.Commands.add('OrangeHRMLogin',(email,password)=>
 {
     cy.get("input[placeholder='Username']").type(email)
