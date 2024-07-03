@@ -35,3 +35,13 @@ Cypress.Commands.add('OrangeHRMLogin',(email,password)=>
     cy.get("input[placeholder='Password']").type(password)
     cy.get("button[type='submit']").click()
 })
+
+Cypress.Commands.add('fillContactForm',(formData)=>
+    {
+        cy.get("[data-qa='name']").type(formData.username)
+        cy.get("[data-qa='email']").type(formData.email)
+        cy.get("[data-qa='subject']").type(formData.subject)
+        cy.get("[name='upload_file']").selectFile(formData.filepath)
+        cy.get("[data-qa='submit-button']").click()
+        cy.get("ul.nav.navbar-nav li:nth-child(8) a").click()
+    })

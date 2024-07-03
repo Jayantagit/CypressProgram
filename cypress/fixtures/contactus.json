@@ -1,0 +1,16 @@
+[
+    {
+        "id": 0,
+        "username": "Jayanta",
+        "email": "jayantamandal2006@gmail.com",
+        "subject":"Test1",
+        "filepath": "cypress\\fixtures\\adhar.jpg"
+    },
+    {
+        "id": 1,
+        "username": "Manish",
+        "email": "jayantamandal2006@test.com",
+        "subject":"Test2",
+        "filepath": "cypress\\fixtures\\adhar.jpg"
+    }
+]
